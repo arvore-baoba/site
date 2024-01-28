@@ -1,0 +1,214 @@
+@import url(../css/fonts.css);
+
+:root {
+    --bg-green: #668170;
+    --bg-light:#fefae0;
+    --tertiary: #919e8a;
+    --quartenary: #afbba3;
+    --bg-green-light: #becdb8;
+    --border-color: #a4a38c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.site-logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+.nav-brand {
+    background-image: url(../img/site-logo.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+header.scrolled {
+    background-color: var(--bg-light);
+    transition: background-color 200ms ease-in;
+}
+
+header.scrolled .nav-link {
+    color: var(--bg-green);
+}
+
+header.scrolled .navbar {
+    background-color: var(--bg-light);
+    transition: background-color 200ms ease-in;
+}
+
+.nav-link {
+    color: var(--bg-light);
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+
+.baoba-bg--primary {
+    background-color: var(--bg-light);
+    width: 100%;
+    transition: background-color 200ms ease-out;
+}
+
+.baoba-bg--secondary {
+    background-color: var(--bg-green);
+    transition: background-color 200ms ease-out;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #658372;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.title--secondary {
+    font-size: 18px;
+    color: var(--bg-green);
+    align-self: flex-start;
+    margin-bottom: 1em;
+}
+
+.site-logo:link {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.baoba-bg__icon--bottom {
+    background-image: url(../img/baobab_left.svg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: bottom -100px left -50px;
+}
+
+.list__container {
+    width: 100%;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item::before {
+    content: url('../img/leaf-mark.svg');
+    display: inline-block;
+    flex: 0 0 40px;
+}
+
+.list__item {
+    display: flex;
+    color: var(--bg-green);
+    gap: 15px;
+}
+
+.content__paragraph {
+    padding: 50px 20px;
+}
+
+.baoba-bg__icon_reverse--bottom {
+    width: 100%;
+    background-image: url(../img/baobab_right.svg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: bottom -100px right -90px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-brand {
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .baoba-bg__icon--top {
+        background-image: url(../img/baobab.svg);
+        background-repeat: no-repeat;
+        background-size: 250px;
+        background-position: top 30px right -50px;
+    }    
+
+    .container {
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .image__container {
+        padding: 50px 0 40px 0;
+        width: 100%;
+    }
+
+    .image__container img {
+        width: 100%;
+    }
+
+    .baoba-bg__icon--bottom {
+        background-image: url(../img/baobab_left.svg);
+        background-repeat: no-repeat;
+        background-size: 250px;
+        background-position: bottom -50px left -90px;
+    }
+
+    .title--secondary {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content__container {
+        width: 55%;
+    }   
+
+    .image__container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .image__container {
+        width: 80%;
+    }
+}
+
+footer {
+    min-height: 200px;
+}
+
+.footer__label {
+    font-size: 14px;
+    text-align: center;
+}
