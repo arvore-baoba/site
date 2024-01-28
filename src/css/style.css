@@ -33,9 +33,9 @@ header {
 
 .nav-brand {
     background-image: url(../img/site-logo.png);
-    background-size: 120px;
-    width: 120px;
-    height: 120px;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
 }
 
 header.scrolled {
@@ -145,6 +145,14 @@ header.scrolled .navbar {
     background-position: bottom -100px right -90px;
 }
 
+@media screen and (min-width: 768px) {
+    .nav-brand {
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .baoba-bg__icon--top {
         background-image: url(../img/baobab.svg);
@@ -196,7 +204,10 @@ header.scrolled .navbar {
     }
 }
 
-
 footer {
     min-height: 200px;
+}
+
+.footer__label {
+    font-size: 14px;
 }
