@@ -1,0 +1,89 @@
+@import url(../css/fonts.css);
+
+:root {
+    --bg-green: #658372;
+    --bg-light:#fafbe3;
+    --tertiary: #919e8a;
+    --quartenary: #afbba3;
+    --bg-green-light: #becdb8;
+    --border-color: #a4a38c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.baoba-bg__icon--top {
+    background-image: url(../img/baobab.svg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: top 50px right -20px;
+}
+
+
+.baoba-bg--primary {
+    background-color: var(--bg-light);
+    width: 100%;
+}
+
+.baoba-bg--secondary {
+    background-color: var(--bg-green);
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #658372;
+    margin-bottom: 16px;
+    /* font-size: 2rem; */
+    /* text-transform: uppercase; */
+    /* margin-bottom: 1rem; */
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    /* font-size: 1.5rem; */
+    /* text-transform: uppercase; */
+    /* margin-bottom: 1rem; */
+}
+
+.site-logo:link {
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.baoba-bg__icon--bottom {
+    background-image: url(../img/baobab_left.svg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: bottom -100px left -50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .image__container {
+        padding: 50px 0 40px 0;
+        width: 50%;
+    }
+
+    .baoba-bg__icon--bottom {
+        background-image: url(../img/baobab_left.svg);
+        background-repeat: no-repeat;
+        background-size: 250px;
+        background-position: bottom -100px left -50px;
+    }
+}
