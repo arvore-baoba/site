@@ -3,10 +3,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
 
         const targetElement = document.querySelector(this.getAttribute('href'));
+        
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 50, // Ajuste esse valor conforme necessário
+                top: targetElement.offsetTop - 50, 
                 behavior: 'smooth'
             });
         }
