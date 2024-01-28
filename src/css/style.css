@@ -96,7 +96,7 @@ header.scrolled .navbar {
     font-size: 18px;
     color: var(--bg-green);
     align-self: flex-start;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .site-logo:link {
